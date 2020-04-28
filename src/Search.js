@@ -3,7 +3,7 @@ import useFuse from 'react-use-fuse';
 
 function MyComponent({projects}) {
   const options = {
-    keys: ["name", "email","keywords"]
+    keys: ["name", "email", "keywords"]
   }
 
   const { result, search, term } = useFuse({
