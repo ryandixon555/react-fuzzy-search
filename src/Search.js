@@ -1,13 +1,13 @@
 import React from 'react';
 import useFuse from 'react-use-fuse';
 
-function MyComponent({customers}) {
+function MyComponent({projects}) {
   const options = {
-    keys: ["name", "email"]
+    keys: ["name", "email","keywords"]
   }
 
   const { result, search, term } = useFuse({
-    data: customers,
+    data: projects,
     options
   });
 
