@@ -19,17 +19,17 @@ function MyComponent({customers}) {
               placeholder="Search for a customer..."
           />
 
-{result &&
-    result.map(customer => {
-      console.log(customer);
-      if (customer.item) customer = customer.item;
-      return (
-        <div key={customer.id}>
-          <p>{customer.name}</p>
-          <p>{customer.email}</p>
-        </div>
-      );
-    })}
+          {result &&
+              result.map(customer => {
+                console.log(customer);
+                if (customer.item) customer = customer.item;
+                return (
+                  <div key={customer.id}>
+                    <p>{customer.name}</p>
+                    <p>{customer.email}</p>
+                  </div>
+                );
+              })}
       </div>
   )
 }
